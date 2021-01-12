@@ -23,11 +23,10 @@ import kotlin.reflect.KClass
 
 class Native constructor(
     context: Context,
-    javascriptEngine: JavascriptEngine,
     hostView: BallerView
 ) : NativeInterface {
     var _context: Context = context;
-    var _javascriptEngine: JavascriptEngine = javascriptEngine;
+    var _javascriptEngine: JavascriptEngine = JavascriptEngine();
     var _views: HashMap<String, NativeView> = HashMap();
     var _nativeId: String = "NATIVE";
     var _hostView: BallerView = hostView;
