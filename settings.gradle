@@ -1,4 +1,1 @@
 include ':library'
-
-android.useAndroidX=true
-android.enableJetifier=true
