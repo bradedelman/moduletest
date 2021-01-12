@@ -14,7 +14,7 @@ import com.affirm.baller.utils.LayoutView
 import com.affirm.baller.utils.NativeInterface
 import com.affirm.baller.view.NativeView
 
-class BallerView constructor(context: Context, script: String, scaledWidth: Int) : LayoutView(context) {
+open class BallerView constructor(context: Context, script: String, scaledWidth: Int) : LayoutView(context) {
 
     interface BallerViewInterface {
         fun  onEvent(name: String, value: String);

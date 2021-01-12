@@ -59,7 +59,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.affirm.baller'
-                artifactId = 'baler-android'
+                artifactId = 'baller-android'
                 version = '1.0'
             }
         }
